@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import emojiLogo from "../../img/heartemoji.png";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 const navbar = () => {
@@ -7,7 +8,15 @@ const navbar = () => {
     <div className="n-wrapper" id="Navbar">
       {/* left */}
       <div className="n-left">
-        <div className="n-name">Andrew</div>
+        <div className="n-name">
+          <Link to="/">
+            <img
+              style={{ width: "70px", cursor: "pointer" }}
+              src={emojiLogo}
+              alt=""
+            />
+          </Link>
+        </div>
         <Toggle />
       </div>
       {/* right */}

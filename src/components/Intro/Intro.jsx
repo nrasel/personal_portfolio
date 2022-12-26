@@ -8,7 +8,6 @@ import boy from "../../img/boy.png";
 import crown from "../../img/crown.png";
 import Github from "../../img/github.png";
 import glassesimoji from "../../img/glassesimoji.png";
-import Instagram from "../../img/instagram.png";
 import LinkedIn from "../../img/linkedin.png";
 import thumbup from "../../img/thumbup.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
@@ -30,8 +29,8 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Naimur Rahman</span>
           <span>
-            MERN Stack Developer with high level of experience in web designing
-            and development, producting the Quality work.
+            MERN Stack Developer with the experience in web designing and
+            development, producting the Quality work.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -39,9 +38,16 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a target="_blank" href="https://github.com/nrasel" rel="noreferrer">
+            <img src={Github} alt="" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/naimurrh/"
+            rel="noreferrer"
+          >
+            <img src={LinkedIn} alt="" />
+          </a>
         </div>
       </div>
       {/* right image side */}

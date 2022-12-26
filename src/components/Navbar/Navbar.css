@@ -33,7 +33,9 @@
   gap: 2rem;
   margin-right: 4rem;
 }
-
+.n-list > ul li a {
+  font-size: 18px;
+}
 .n-list > ul :hover {
   color: var(--orange);
   cursor: pointer;
